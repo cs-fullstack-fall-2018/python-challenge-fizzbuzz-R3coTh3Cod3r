@@ -16,15 +16,17 @@
 import os
 
 os.system("clear")
-
+my_file = open("FizzBuzz.txt", "w+")
 for num in range(1,100):
     if num % 3 == 0 and num % 5== 0:
         print(str(num),"FIZZBUZZ")
+        my_file.write("FizzBuzz.txt")
     elif num % 5 == 0:
         print(str(num),"BUZZ")
     elif num% 3 == 0:
         print(str(num),"FIZZ")
-
+    else:
+        print(num)
 
 
 
